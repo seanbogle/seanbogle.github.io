@@ -74,20 +74,21 @@
           <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
         </div>
 
-
+        <!-- https://docs.google.com/forms/d/e/1FAIpQLSdrUXkG4LDCANkrBk69qZQldIopuR7N_6km4n_C141k1--hQQ/viewform?usp=pp_url&entry.671037062=Sean&entry.931194732=Bogle&entry.20682675=New+Website+2017&entry.1727166011=I'm+looking+for+web+development -->
         <!-- Contact Section -->
         <div class="w3-container w3-padding-32" id="contact">
           <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
           <p>Lets get in touch and talk about your and our next project.</p>
-          <form action="/action_page.php" target="_blank">
-            <input class="w3-input" type="text" placeholder="Name" required name="Name">
-            <input class="w3-input w3-section" type="text" placeholder="Email" required name="Email">
-            <input class="w3-input w3-section" type="text" placeholder="Subject" required name="Subject">
-            <input class="w3-input w3-section" type="text" placeholder="Comment" required name="Comment">
+          <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdrUXkG4LDCANkrBk69qZQldIopuR7N_6km4n_C141k1--hQQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+            <input class="w3-input" type="text" placeholder="Name" required name="entry.671037062" id="entry.671037062">
+            <input class="w3-input w3-section" type="text" placeholder="Email" required name="entry.931194732" id="entry.931194732">
+            <input class="w3-input w3-section" type="text" placeholder="Subject" required name="entry.20682675" id="entry.20682675">
+            <input class="w3-input w3-section" type="text" placeholder="Comment" required name="entry.1727166011" id="entry.1727166011">
             <button class="w3-button w3-black w3-section" type="submit">
         <i class="fa fa-paper-plane"></i> SEND MESSAGE
       </button>
           </form>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
         </div>
 
         <!-- End page content -->
