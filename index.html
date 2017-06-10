@@ -105,7 +105,7 @@
       <!-- Add Google Maps -->
       <!-- <script>
         function myMap() {
-          myCenter = new google.maps.LatLng(41.878114, -87.629798);
+          myCenter = new google.maps.LatLng();
           var mapOptions = {
             center: myCenter,
             zoom: 12,
@@ -127,6 +127,17 @@
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
+
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript">
+        var submitted = false;
+      </script>
+      <script type="text/javascript">
+        $('#gform').on('submit', function(e) {
+          $('#gform *').fadeOut(2000);
+          $('#gform').prepend('Your submission has been processed...');
+        });
+      </script>
 
 </body>
 
