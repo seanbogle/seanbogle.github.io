@@ -44,7 +44,21 @@
       <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="w3-display-container">
           <div class="w3-display-topleft w3-black w3-padding">Horsepower.life</div>
-          <img src="img/horsepower.png" alt="Horsepower.life" style="width:100%">
+          <!-- Trigger the Modal -->
+          <img id="myImg" src="img/horsepower.png" alt="http://horsepower.life" width="300" height="200">
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+          </div>
         </div>
       </div>
       <div class="w3-col l3 m6 w3-margin-bottom">
@@ -121,8 +135,12 @@
         ga('create', 'UA-100868662-1', 'auto');
         ga('send', 'pageview');
       </script>
+      <!-- End Google Analytics snippet -->
 
-      <script src="js/jquery-3.2.1.min.js"></script>
+      <!-- JS Includes -->
+      <script src="js/main.js" </script>
+        < script src = "js/jquery-3.2.1.min.js" >
+      </script>
       <script type="text/javascript">
         var submitted = false;
       </script>
